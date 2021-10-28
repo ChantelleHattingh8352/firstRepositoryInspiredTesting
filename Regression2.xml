@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSmoke">
+	<test thread-count="5" name="RegressionSmoke">
+	<parameter name="URL" value="www.inspired.co.za"></parameter>
+		<groups>
+			<run>
+				<include name="Smoke" />
+			</run>
+		</groups>
+		<packages>
+			<package name="loans" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
